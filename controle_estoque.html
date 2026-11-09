@@ -19,10 +19,13 @@
     </div>
     <div class="principal">
         <div class="formulario-produto">
-            <h2>Buscar Produto</h2>
+            <h2>Compra de Produtos</h2>
                 <label>Nome do Produto:</label><br>
                 <input id="produtoo" type="text"><br><br>
-                <button id="busca" onclick="listar_produto()">Buscar Produto</button>
+                <label>quantidade do Produto:</label><br>
+                <input id="quantidade_produto" type="text"><br><br>
+                <!-- <button id="busca" onclick="listar_produto()">Buscar Produto</button> -->
+                <button id="comprar" onclick="cadastrar_compra()">Comprar Produto</button>
         </div>
     </div>
     <div class="principal" id="listagem_produto"></div>
