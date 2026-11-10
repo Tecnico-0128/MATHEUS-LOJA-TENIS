@@ -17,6 +17,10 @@ app.use('/clientes', clienteRouter)
 app.use('/produtos', produtoRouter)
 app.use('/vendas', vendasRouter)
 
+app.get('/health', (req, res) => {
+    res.json({message: 'Servidor funcionando.', success: true})
+})
+
 app.use((req, res) => {
     res.status(404).json({
         erro: 'Rota não encontrada'
